@@ -130,6 +130,7 @@ class VanillaDQN:
 
             with tf.GradientTape() as tape:
                 # Train the model on the states and updated Q-values
+
                 q_values = self.model(state_sample)
 
                 # Apply the masks to the Q-values to get the Q-value for action taken
