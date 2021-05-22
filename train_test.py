@@ -5,9 +5,8 @@ from flatland.envs.rail_generators import complex_rail_generator
 from flatland.envs.schedule_generators import complex_schedule_generator
 from flatland.utils.rendertools import RenderTool
 
-from test1 import VanillaDQN, obs_to_tensor
+from simple_DQN import VanillaDQN, obs_to_tensor
 
-import tensorflow as tf
 
 TreeObservation = TreeObsForRailEnv(max_depth=2, predictor=ShortestPathPredictorForRailEnv())
 LocalGridObs = LocalObsForRailEnv(view_height=10, view_width=2, center=2)
